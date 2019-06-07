@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+/* PAGINA: HOME*/
+p.heading{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #96beff;
+  font-size: 30px;
+}
+
+footer.footer{
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #c1d9ff;
+}
+
+p.footerT{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+}
+
+img.movie-db{
+  width: 10%;
+  height: 10%;
+}
+div.bd-example{
+  width: 30%;
+  height: 50%;
+}
+/* PAGINA: GENEROS*/
