@@ -31,7 +31,19 @@ img.movie-db{
   height: 10%;
 }
 div.bd-example{
-  width: 30%;
   height: 50%;
+}
+
+.carousel-inner{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.carousel-control-prev{
+  left: 25%;
+}
+
+.carousel-control-next{
+  right: 25%;
 }
 /* PAGINA: GENEROS*/
