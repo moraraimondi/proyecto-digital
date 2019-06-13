@@ -40,6 +40,7 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+  width: 600px;
 }
 
 .container-1 input#search{
@@ -55,6 +56,8 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
   outline-color: #808287;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 }
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -115,4 +118,5 @@ div.bd-example{
 .carousel-control-next{
   right: 25%;
 }
+
 /* PAGINA: GENEROS*/
