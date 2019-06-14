@@ -109,21 +109,18 @@ img.movie-db{
   width: 150px;
   height: 80px;
 }
-div.bd-example{
-  height: 450px;
+
+
+h1.hola{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 20px;
+  text-align: center;
 }
 
-.carousel-inner{
-  width: 300px;
-  margin: 0 auto;
-}
-
-.carousel-control-prev{
-  left: 25%;
-}
-
-.carousel-control-next{
-  right: 25%;
+img.imagenes-populares:hover{
+  filter: blur(10px);
 }
 
 div.flex-grande{
@@ -139,6 +136,7 @@ article.pelisR{
 article.pelisP{
   width: 30%;
 }
+
 /* PAGINA: GENEROS*/
 .generosLista{
   color: white;

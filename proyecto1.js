@@ -20,10 +20,15 @@ window.addEventListener("load", function() {
     return response.json();
   })
   .then(function(data){
+    console.log(data);
     var imagen = document.querySelectorAll(".imagenes-populares")
     var srcImage = "https://image.tmdb.org/t/p/w500"
     for (var i =0; i<10; i++){
       imagen[i].setAttribute("src", (srcImage + data.results[i].poster_path))
+    }
+    var titulo = document.querySelectorAll(".hola")
+    for (var i = 0; i <10; i++) {
+      titulo[i].innerHTML+= data.results[i].title
     }
   })
   .catch(function(error){
@@ -36,6 +41,7 @@ window.addEventListener("load", function() {
     return response.json();
   })
   .then(function(data){
+    console.log(data);
     var imagen = document.querySelectorAll(".ratingP")
     var srcImage = "https://image.tmdb.org/t/p/w500"
     for (var i =0; i<6; i++){
@@ -61,3 +67,15 @@ window.addEventListener("load", function() {
   .catch(function(error){
     console.log("The error was: " + error);
   })
+
+  //BUSCAR
+  document.querySelector(".icon").onkeypress= function(evento){
+    if (evento.code == "Enter") {
+      var busqueda = document.querySelector(".icon");
+      if (busqueda.value.length >=3) {
+        location.href = "resultados.html?buscar" + busqueda.value
+      } else {
+        alert("El campo de busqueda debe tener al menos 3 caracteres")
+      }
+    }
+  }
