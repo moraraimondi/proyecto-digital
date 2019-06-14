@@ -95,15 +95,14 @@ footer.footer{
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color:grey;
+  background-color: black;
 }
 
 p.footerT{
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: white;
   letter-spacing: 4px;
-  background-color: grey;
 }
 
 img.movie-db{
@@ -127,16 +126,19 @@ div.bd-example{
   right: 25%;
 }
 
-img.ratingP{
-  width: 185px;
-  height: 278px;
+div.flex-grande{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-img.popularesP{
-  width: 185px;
-  height: 278px;
+article.pelisR{
+  width: 30%;
 }
 
+article.pelisP{
+  width: 30%;
+}
 /* PAGINA: GENEROS*/
 .generosLista{
   color: white;
