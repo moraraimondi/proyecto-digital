@@ -10,8 +10,7 @@
 
 .logo{
   height: 40px;
-  width: 60px;
-  z-index: 3000;
+  width: 250px;
 }
 /* Style the header links */
 .header a {
@@ -72,7 +71,10 @@
     float: none;
   }
 }
-
+.espacio-login{
+  color: white;
+  margin-left: 20px;
+}
 
 
 /* PAGINA: HOME*/
@@ -101,8 +103,8 @@ p.footerT{
 }
 
 img.movie-db{
-  width: 300px;
-  height: 450px;
+  width: 150px;
+  height: 80px;
 }
 div.bd-example{
   height: 450px;

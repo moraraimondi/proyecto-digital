@@ -12,30 +12,41 @@
     <title></title>
   </head>
   <body>
-    <header>
-      <div class="header">
-    <a href="#principal" class="logo">
-      <img scr=logo.png> </a>
-      <div class="header-right">
-      <a class="active" href="#home">HOME</a>
-      <a href="#generos">GÉNEROS</a>
-      <a href="#LOGIN"><a class="uk-button uk-button-default" href="#modal-sections" uk-toggle>LogIn</a>
+    <div id="modal-sections" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Log In</h2>
+            </div>
+            <div class="uk-modal-body">
+              <div class="container">
+                <form class="login">
 
-<div id="modal-sections" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Log In</h2>
-        </div>
-        <div class="uk-modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="uk-modal-footer uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <button class="uk-button uk-button-primary" type="button">Save</button>
+
+       <label for="uname"><b>Usuario</b></label>
+       <input type="text" placeholder="Usuario" name="uname" required class="nombreDeUsuario">
+
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                <button class="uk-button uk-button-primary" type="submit">LogIn</button>
+            </div>
+            </form>
         </div>
     </div>
-</div>
+    </div>
+    <header>
+      <!-- header-->
+      <div class="header">
+    <a href="#principal" class="logo">
+      <img src="logo.PNG"> </a>
+      <div class="header-right">
+      <a class="active" href="#home">HOME</a>
+      <a href="#generos"</div> GENEROS</a>
+      <span class="espacio-login">
+        <a href="#LOGIN"><a class="uk-button uk-button-default" href="#modal-sections" uk-toggle>LogIn</a>
+      </span>
+
 </a>
         <div class="box">
          <div class="container-1">
@@ -47,13 +58,13 @@
      </div>
    </header>
 
-    <script type="text/javascript" src="proyecto1.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <footer class="footer">
+     <p class="footerT">Valentina Socin Casas y Mora Raimondi</p>
+     <img src="logo-posta.png" alt="" class="movie-db">
+   </footer>
+   <script type="text/javascript" src="proyecto1.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-<footer class="footer">
-  <p class="footerT">Valentina Socin Casas y Mora Raimondi</p>
-  <img src="logo-posta.png" alt="" class="movie-db">
-</footer>
