@@ -99,15 +99,15 @@ p.footerT{
 }
 
 img.movie-db{
-  width: 10%;
-  height: 10%;
+  width: 300px;
+  height: 450px;
 }
 div.bd-example{
-  height: 50%;
+  height: 450px;
 }
 
 .carousel-inner{
-  width: 40%;
+  width: 300px;
   margin: 0 auto;
 }
 
