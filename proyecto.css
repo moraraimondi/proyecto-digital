@@ -11,6 +11,7 @@
 .logo{
   height: 40px;
   width: 60px;
+  z-index: 3000;
 }
 /* Style the header links */
 .header a {
@@ -88,14 +89,15 @@ footer.footer{
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #c1d9ff;
+  background-color:grey;
 }
 
 p.footerT{
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
+  color: black;
   letter-spacing: 4px;
+  background-color: grey;
 }
 
 img.movie-db{
