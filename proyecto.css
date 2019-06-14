@@ -78,12 +78,16 @@
 
 
 /* PAGINA: HOME*/
+body{
+  background-color: #212121;
+}
 p.heading{
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 4px;
   color: #96beff;
   font-size: 30px;
+  text-align: center;
 }
 
 footer.footer{
@@ -121,6 +125,16 @@ div.bd-example{
 
 .carousel-control-next{
   right: 25%;
+}
+
+img.ratingP{
+  width: 185px;
+  height: 278px;
+}
+
+img.popularesP{
+  width: 185px;
+  height: 278px;
 }
 
 /* PAGINA: GENEROS*/
