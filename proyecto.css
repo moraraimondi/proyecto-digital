@@ -95,15 +95,14 @@ footer.footer{
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color:grey;
+  background-color: black;
 }
 
 p.footerT{
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: white;
   letter-spacing: 4px;
-  background-color: grey;
 }
 
 img.movie-db{

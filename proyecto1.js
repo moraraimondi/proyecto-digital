@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
   .then(function(data){
     var imagen = document.querySelectorAll(".imagenes-populares")
     var srcImage = "https://image.tmdb.org/t/p/w500"
-    for (var i =0; i<6; i++){
+    for (var i =0; i<10; i++){
       imagen[i].setAttribute("src", (srcImage + data.results[i].poster_path))
     }
   })
