@@ -126,14 +126,17 @@ div.bd-example{
   right: 25%;
 }
 
-img.ratingP{
-  width: 185px;
-  height: 278px;
+div.flex-grande{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-img.popularesP{
-  width: 185px;
-  height: 278px;
+article.pelisR{
+  width: 30%;
 }
 
+article.pelisP{
+  width: 30%;
+}
 /* PAGINA: GENEROS*/
