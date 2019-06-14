@@ -138,3 +138,7 @@ img.popularesP{
 }
 
 /* PAGINA: GENEROS*/
+.generosLista{
+  color: white;
+  list-style: none;
+}
