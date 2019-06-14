@@ -81,6 +81,7 @@ p.heading{
   letter-spacing: 4px;
   color: #96beff;
   font-size: 30px;
+  text-align: center;
 }
 
 footer.footer{
@@ -117,6 +118,16 @@ div.bd-example{
 
 .carousel-control-next{
   right: 25%;
+}
+
+img.ratingP{
+  width: 185px;
+  height: 278px;
+}
+
+img.popularesP{
+  width: 185px;
+  height: 278px;
 }
 
 /* PAGINA: GENEROS*/
