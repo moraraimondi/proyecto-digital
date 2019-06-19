@@ -10,9 +10,14 @@ window.addEventListener("load", function(){
   .then(function(información){
     console.log(información);
     var arrayBuscador = información.results
+    var imagen = document.querySelector(".buscar")
+    var texto = document.querySelector(".buscar-titulo")
     for (var i=0; i < informacion.results.length; i++){
-    //informacion[i]
-    console.log(informacion.resulys[i].id)
+    imagen[i].setAttribute("src", (posterUrl + información.results[i].poster_path))
+    for (var i = 0; i <6; i++) {
+      texto[i].innerHTML += información.results[i].title
+    }
+    console.log(informacion.results[i].id)
     titulo =informacion.results[i].title
     poster= informacion.results.poster_path
     posterUrl= "https://image.tmdm.org/t/p/original/"

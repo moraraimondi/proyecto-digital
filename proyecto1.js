@@ -47,6 +47,10 @@ window.addEventListener("load", function() {
     for (var i =0; i<6; i++){
       imagen[i].setAttribute("src", (srcImage + data.results[i].poster_path))
     }
+    var titulo = document.querySelector(".pelis-titulo")
+    for (var i = 0; i <6; i++) {
+      titulo[i].innerHTML += data.results[i].title
+    }
   })
   .catch(function(error){
     console.log("The error was: " + error);
