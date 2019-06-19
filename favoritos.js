@@ -11,7 +11,20 @@ window.addEventListener("load", function() {
     var favoritas = objLit.caracteristica;
   }
 
+
   for (var i = 0; i < favoritas.length; i++) {
-    favoritas[i]
+
+      var API_KEY = "928ad4dee3a02646fa1725b8bcaa2a96"
+      var url = "https://api.themoviedb.org/3/movie/"+favoritas[i]+"?api_key="+API_KEY
+      var urlPic = "https://image.tmdb.org/t/p/original"
+    fetch(url)
+      .then(function(data) {
+        return data.json()
+      })
+      .then(function(pelicula) {
+        console.log(pelicula);
+        console.log(pelicula.title, pelicula.id, pelicula.poster_path);
+        document.querySelector("ul").innerHTML+= "<li>"+"<a href='favoritos.html?idPelicula="pelicula.results[i].id+"'>" + "<p>" + pelicula.results[i].title + "</p>" + "<img src='"+ urlPic + pelicula.results[i].poster_path +" 'style='width: 300px;'>" + "</a>" + "</li>"
+      })
   }
 })
