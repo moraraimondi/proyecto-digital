@@ -15,7 +15,6 @@ window.addEventListener("load", function(){
     // Paso 3 - Leo del obj lit, la caracteristica importante
     var favoritas = objLit.caracteristica;
   }
-
   var API_KEY = "928ad4dee3a02646fa1725b8bcaa2a96"
   var url = "https://api.themoviedb.org/3/movie/"+idPelicula+"?api_key="+API_KEY
   fetch(url)

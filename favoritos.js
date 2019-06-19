@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
     // Paso 3 - Leo del obj lit, la caracteristica importante
     var favoritas = objLit.caracteristica;
   }
-
+console.log(favoritas);
 
   for (var i = 0; i < favoritas.length; i++) {
 
@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
       .then(function(pelicula) {
         console.log(pelicula);
         console.log(pelicula.title, pelicula.id, pelicula.poster_path);
-        document.querySelector("ul").innerHTML+= "<li>"+"<a href='favoritos.html?idPelicula="pelicula.results[i].id+"'>" + "<p>" + pelicula.results[i].title + "</p>" + "<img src='"+ urlPic + pelicula.results[i].poster_path +" 'style='width: 300px;'>" + "</a>" + "</li>"
+        document.querySelector("ul").innerHTML+= "<li>"+"<a href='detalle.html?idPelicula="+pelicula.id+"'>" + "<p>" + pelicula.title + "</p>" + "<img src='"+ urlPic + pelicula.poster_path +" 'style='width: 300px;'>" + "</a>" + "</li>"
       })
   }
 })
