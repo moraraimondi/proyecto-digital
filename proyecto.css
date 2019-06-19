@@ -141,4 +141,9 @@ article.pelisP{
 .generosLista{
   color: white;
   list-style: none;
+  text-transform: uppercase;
+
+}
+a.uk-link{
+  color: white;
 }
