@@ -31,8 +31,28 @@
         </div>
     </div>
     </div>
-    <header>
-      <!-- header-->
+    <!-- mobile-->
+    <div class="wrapper">
+  <h1>Menu</h1>
+  <a class="menu-btn" onclick="toggleMenu()"></a>
+  <section class="one" onclick="goToPage(0)">
+    <br>
+    <h1>Home</h1>
+  </section>
+  <section class="two" onclick="goToPage(1)">
+    <h1>Generos</h1>
+  </section>
+  <br>
+  <section class="three" onclick="goToPage(2)">
+    <h1>Buscar</h1>
+  </section>
+  <br>
+  <section class="four" onclick="goToPage(3)">
+    <h1>Log In</h1>
+  </section>
+</div>
+    <!-- header-->
+    <header class="header-principal">
       <div class="header">
     <a href="home.html" class="logo">
       <img src="logo.PNG"> </a>
@@ -184,5 +204,6 @@
     <script src="jquery.js"></script>
     <script src="uikit.js"></script>
     <script  type="text/javascript"src="buscador.js"></script>
+    <script type="text/javascript" src="mobile.js"></script>
   </body>
 </html>
