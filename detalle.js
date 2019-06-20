@@ -30,9 +30,9 @@ window.addEventListener("load", function(){
 
       var li = ""
       li = "<li>"
-      li +=   "<p>"+objetoLiteralRespuesta.title+"</p>"
+      li +=   "<h2>"+objetoLiteralRespuesta.title+"</h2>"
       li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:300px;'>"
-      li +=   "<p>"+objetoLiteralRespuesta.overview+"</p>"
+      li +=   "<p class=review>"+objetoLiteralRespuesta.overview+"</p>"
       li +=   "<p>" + +  "</p>"
       li += "</li>"
 

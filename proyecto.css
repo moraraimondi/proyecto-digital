@@ -148,12 +148,31 @@ button.uk-modal-close:hover{
 .generosLista{
   color: white;
   text-transform: uppercase;
-  
+
 }
 
 }
 a.uk-link{
   color: white;
 }
+
+/*DETALLES DE LAS PELICULAS*/
+h2{
+  text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #ff0000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+
+li{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+
 
 /* PAGINA: BUSCADOR*/

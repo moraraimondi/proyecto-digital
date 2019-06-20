@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
   var pelisPorGenero = urlSearchParams.get('pelisPorGenero')
   console.log(pelisPorGenero);
 
-  fetch("https://api.themoviedb.org/3/discover/movie?api_key=2acc6c4b1703a31715d2049b8767b9ff&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1")
+  fetch("https://api.themoviedb.org/3/discover/movie?api_key=2acc6c4b1703a31715d2049b8767b9ff&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=")
     .then(function(response){
       return response.json();
     })
