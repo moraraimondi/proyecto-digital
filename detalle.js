@@ -33,7 +33,10 @@ window.addEventListener("load", function(){
       li +=   "<h2>"+objetoLiteralRespuesta.title+"</h2>"
       li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:300px;'>"
       li +=   "<p class=review>"+objetoLiteralRespuesta.overview+"</p>"
-      li +=   "<p>" + +  "</p>"
+      li +=   "<p>" +objetoLiteralRespuesta.release_date + "</p>"
+      li +=  "<p>"+ objetoLiteralRespuesta.genre_ids + "</p>"
+      li +=  "<p>"+ objetoLiteralRespuesta.original_language + "</p>"
+      li +=
       li += "</li>"
 
       ul.innerHTML += li
