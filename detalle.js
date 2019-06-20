@@ -23,23 +23,22 @@ window.addEventListener("load", function(){
     })
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
-
-      var ul = document.querySelector('section ul')
-      // PARTE FIJA DE LA URL DE LA IMAGEN
       var urlImg = "https://image.tmdb.org/t/p/original"
+      document.querySelector(".titulo").innerHTML += objetoLiteralRespuesta.title
+      document.querySelector(".poster-pelis").setAttribute("src",(urlImg + objetoLiteralRespuesta.poster_path))
+      document.querySelector(".fecha").innerHTML += objetoLiteralRespuesta.release_date
+      document.querySelector(".detalles").innerHTML+= objetoLiteralRespuesta.overview
 
-      var li = ""
-      li = "<li>"
-      li +=   "<h2>"+objetoLiteralRespuesta.title+"</h2>"
-      li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:300px;'>"
-      li +=   "<p class=review>"+objetoLiteralRespuesta.overview+"</p>"
-      li +=   "<p>" +objetoLiteralRespuesta.release_date + "</p>"
-      li +=  "<p>"+ objetoLiteralRespuesta.genre_ids + "</p>"
-      li +=  "<p>"+ objetoLiteralRespuesta.original_language + "</p>"
-      li +=
-      li += "</li>"
+      var idiomas = objetoLiteralRespuesta.spoken_languages
+      for (var i = 0; i<idiomas.length; i++) {
+        console.log(idiomas[i]);
+        document.querySelector(".idiomas").innerHTML+= "<p>" +idiomas[i].name + "</p>"
+      }
 
-      ul.innerHTML += li
+      var generos = objetoLiteralRespuesta.genres
+      for (var i = 0; i < generos.length; i++) {
+        document.querySelector(".generos").innerHTML+= "<p>" + generos[i].name + "</p>"
+      }
 
       if (favoritas.indexOf(idPelicula) >= 0) {
         document.querySelector(".estrellita").style.backgroundColor = "gold"
