@@ -1,4 +1,3 @@
-
 fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=2acc6c4b1703a31715d2049b8767b9ff&language=en-US")
 .then(function(response){
   return response.json();

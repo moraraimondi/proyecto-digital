@@ -2,78 +2,7 @@
   box-sizing: border-box;
 }
 
-.header {
-  overflow: hidden;
-  background-color: black;
-  padding: 20px 10px;
-}
-
-.logo{
-  height: 40px;
-  width: 250px;
-}
-/* Style the header links */
-.header a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: black;
-  color: white;
-  text-decoration: underline;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
-  width: 600px;
-}
-
-.container-1 input#search{
-  width: 300px;
-  height: 30px;
-  background: #2b303b;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: grey;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  outline-color: #808287;
-  margin-top: 10px;
-  margin-left: 15px;
-}
-}
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-
-
 /* PAGINA: HOME*/
-header.header-principal{
-  display: block
-}
-footer.footer{
-  display: block;
-}
-div.wrapper{
-  display: none;
-}
-
 body{
   background-color: #212121;
 }
@@ -81,9 +10,10 @@ p.heading{
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 4px;
-  color: #96beff;
+  color: #ff0000;
   font-size: 30px;
   text-align: center;
+  text-shadow: 2px 2px white;
 }
 
 footer.footer{
@@ -106,19 +36,6 @@ img.movie-db{
   height: 80px;
 }
 
-
-h1.hola{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 20px;
-  text-align: center;
-}
-
-img.imagenes-populares:hover{
-  filter: blur(10px);
-}
-
 div.flex-grande{
   display: flex;
   flex-wrap: wrap;
@@ -127,32 +44,11 @@ div.flex-grande{
 
 article.pelisR{
   width: 30%;
-  position: relative;
 }
 
-p.pelis-titulo{
-  z-index: 10;
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  right: 50%;
-  color: white;
-}
 
 article.pelisP{
   width: 30%;
-}
-
-img.ratingp{
-  z-index: 2;
-}
-
-img.ratingP:hover{
-  filter: blur(10px);
-}
-
-img.popularesP:hover{
-  filter: blur(10px);
 }
 
 h2.uk-modal-title{
@@ -192,6 +88,62 @@ button.uk-modal-close:hover{
   border-color: red;
 }
 
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+.logo{
+  height: 40px;
+  width: 250px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+}
+
+.header-right {
+  float: right;
+  width: 600px;
+}
+
+.container-1 input#search{
+  width: 300px;
+  height: 30px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: grey;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  outline-color: #808287;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+}
+
 /* PAGINA: GENEROS*/
 .generosLista{
   color: white;
@@ -202,3 +154,5 @@ button.uk-modal-close:hover{
 a.uk-link{
   color: white;
 }
+
+/* PAGINA: BUSCADOR*/
