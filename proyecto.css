@@ -147,8 +147,9 @@ button.uk-modal-close:hover{
 /* PAGINA: GENEROS*/
 .generosLista{
   color: white;
-  list-style: none;
   text-transform: uppercase;
+  
+}
 
 }
 a.uk-link{
