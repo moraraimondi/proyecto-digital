@@ -74,4 +74,15 @@ window.addEventListener("load", function(){
 
     }
 
+  //  var trailer= (": https://api.themoviedb.org/3/movie/"+idPelicula+"/videos?api_key=928ad4dee3a02646fa1725b8bcaa2a96")
+    //fetch(trailer)
+    //.then(function(response){
+      //return response.json();})
+    //.then(function(peliTrailer){
+    //  console.log(peliTrailer);
+    //  console.log(peliTrailer.results[0].key);
+    //  var urlTrailer = "<iframe width="560" height="315" src="https://www.youtube.com/embed/"+peliTrailer+" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+    //  document.querySelector(".detalles").innerHTML = peliTrailer;
+  //  })
+
 })
