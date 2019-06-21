@@ -24,6 +24,8 @@ window.addEventListener("load", function() {
     var imagen = document.querySelectorAll(".imagenes-populares")
     var srcImage = "https://image.tmdb.org/t/p/w500"
     for (var i =0; i<10; i++){
+      var urlDetalle = "detalle.html?idPelicula="
+      document.querySelectorAll(".link")[i].setAttribute("href",(urlDetalle + data.results[i].id))
       imagen[i].setAttribute("src", (srcImage + data.results[i].poster_path))
     }
   })
@@ -41,6 +43,8 @@ window.addEventListener("load", function() {
     var imagen = document.querySelectorAll(".ratingP")
     var srcImage = "https://image.tmdb.org/t/p/w500"
     for (var i =0; i<6; i++){
+      var urlDetalle = "detalle.html?idPelicula="
+      document.querySelectorAll(".link-2")[i].setAttribute("href",(urlDetalle + data.results[i].id))
       imagen[i].setAttribute("src", (srcImage + data.results[i].poster_path))
     }
   })
@@ -57,6 +61,8 @@ window.addEventListener("load", function() {
     var imagen = document.querySelectorAll(".popularesP")
     var srcImage = "https://image.tmdb.org/t/p/w500"
     for (var i =0; i<6; i++){
+      var urlDetalle = "detalle.html?idPelicula="
+      document.querySelectorAll(".link-3")[i].setAttribute("href",(urlDetalle + data.results[i].id))
       imagen[i].setAttribute("src", (srcImage + data.results[i].poster_path))
     }
   })

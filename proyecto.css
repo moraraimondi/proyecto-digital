@@ -150,13 +150,22 @@ button.uk-modal-close:hover{
   text-transform: uppercase;
 
 }
-
-}
 a.uk-link{
   color: white;
 }
 
 /*DETALLES DE LAS PELICULAS*/
+
+div.detalle-grande{
+  display: flex;
+  position: absolute;
+}
+
+button.estrellita{
+  position: relative;
+  left: 350px;
+  top: 130px;
+}
 .titulo{
   text-transform: uppercase;
     font-weight: bold;
@@ -168,34 +177,43 @@ a.uk-link{
 }
 
 .poster-pelis{
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  list-style: none;
+  float: left;
+  margin-left: 4px;
+  width: 300px;
+  height: 450px;
 }
 .fecha{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
+  position: relative;
+
 }
 .detalles{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
+  position: relative;
+
+
 }
 .idiomas{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
+  position: relative;
+
 }
 .generos{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
+  position: relative;
+
 }
 
 .espacio-login{
