@@ -157,7 +157,7 @@ a.uk-link{
 }
 
 /*DETALLES DE LAS PELICULAS*/
-h2{
+.titulo{
   text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 4px;
@@ -167,7 +167,31 @@ h2{
     text-shadow: 2px 2px white;
 }
 
-li{
+.poster-pelis{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+.fecha{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+.detalles{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+.idiomas{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+.generos{
   color: white;
   text-decoration: none;
   text-transform: uppercase;

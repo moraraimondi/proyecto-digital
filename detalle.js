@@ -71,6 +71,7 @@ window.addEventListener("load", function(){
        var json = JSON.stringify(objLit)
 
        localStorage.setItem("peliculasFavoritas", json)
+
     }
 
 })
